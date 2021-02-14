@@ -10,8 +10,6 @@ on:
     branches:
       - master
       - main
-    
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,5 +31,10 @@ jobs:
         python -m unittest -v
         coverage run -m unittest
         coverage report
-        coverage html        
+        coverage html
+    - name: Archive code coverage html report
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: src/htmlcov
 

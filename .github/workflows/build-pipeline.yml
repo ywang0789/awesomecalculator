@@ -40,8 +40,8 @@ jobs:
     - name: Run package creation
       run: |
         cd src
-        python -m pip install --user --upgrade setuptools wheel
-        python setup.py sdist bdist_wheel
+        python -m pip install --user --upgrade build
+        python -m build
     - name: Archive package
       uses: actions/upload-artifact@v2
       with:

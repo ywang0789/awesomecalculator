@@ -13,8 +13,8 @@ The package has been created following this [tutorial](https://packaging.python.
 
 ## Folder structure
 
-1. __/build__
-    This folder will contain all the scripts needed to generate the CI build.
+1. __/.github/workflows__
+    This folder will contain the GitHub workflows template
 
 2. __/src__
     This folder will contain the source code of the awesome calculator package :smile:

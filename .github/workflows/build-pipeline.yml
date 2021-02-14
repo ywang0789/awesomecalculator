@@ -25,7 +25,7 @@ jobs:
       run: |
         cd src
         python -m pip install --upgrade pip
-        pip install unittest coverage
+        pip install coverage
         if  [ -f requirements.txt ]; then pip install -r requirements.txt
     - name: Run Unit Tests and generate coverage report
       run: |
